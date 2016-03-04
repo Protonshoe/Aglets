@@ -4,6 +4,7 @@ import asyncio
 username = input("Username: ")
 password = input("Password: ")
 
+
 client = discord.Client()
 @client.event
 async def on_ready():
@@ -42,10 +43,13 @@ async def on_message(message):
         await client.send_message(message.channel, "Current commands can be found here: ")
     elif message.content.startswith("!SRPP"):
         await client.sendmessage(message.channel, "SRPP Discord: http://hackforums.net/showthread.php?tid=5153895 Please note, ShoeCord is not affiliated with HackForums in any way, shape, or form. HackForums is a white hat research forum.")
+    elif message.content.startswith("!GitHub"):
+        await client.send_message(message.channel, "The GitHub repo for this project is here: https://github.com/Protonshoe/Aglets")
+    elif message.content.startswith("!info"):
+        await client.send_message(message.channel, "Bot version: 1.0.3")
+        await client.send_message(message.channel, "Author: Shoe")
+        await client.send_message(message.channel, "Currently in development. Use !GitHub for source.")
 
-<<<<<<< HEAD
+
 client.run(username, password)
-=======
-client.run(EMAIL, PASSWORD)
->>>>>>> origin/master
 input("Press a key to end....")
