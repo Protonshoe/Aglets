@@ -52,4 +52,8 @@ async def on_message(message):
 
 
 client.run(username, password)
+<<<<<<< HEAD
 input("Press a key to end....")
+=======
+
+>>>>>>> origin/master
