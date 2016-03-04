@@ -41,5 +41,5 @@ async def on_message(message):
     elif message.content.startswith("!SRPP"):
         await client.sendmessage(message.channel, "SRPP Discord: http://hackforums.net/showthread.php?tid=5153895 Please note, ShoeCord is not affiliated with HackForums in any way, shape, or form. HackForums is a white hat research forum.")
 
-client.run("shoedevelopment@gmail.com", "obonatc12")
+client.run(EMAIL, PASSWORD)
 input("Press a key to end....")
