@@ -20,18 +20,15 @@ async def on_message(message):
                 counter +=1
         await client.edit_message(tmp, "You have {} messages.".format(counter))
 
-
     elif message.content.startswith('!sleep'):
         await asyncio.sleep(5) #Appears to be in seconds.
         await client.send_message(message.channel, 'Done sleeping.')
 
-
     elif message.content.startswith('!pythonhelp'):
        await client.send_message(message.channel, 'Need help with Python? Shoe recommends the Python Docs, Stack Exchange, and Google. (; ')
 
-
     elif message.content.startswith("!sources"):
-        await client.send_message(message.channel, 'Quit your whining about my sources and talk about the damn content.')
+        await client.send_message(message.channel, 'Quit your whining about my sources and talk about the content.')
 
     elif message.content.startswith("!help"):
         await client.send_message(message.channel, "If you need help with something, tag (using the '@' symbol) Austin Archer or Jest.")
@@ -40,7 +37,7 @@ async def on_message(message):
         await client.send_message(message.channel, "If you need help with the bot, contact @Shoe. If the bot is spamming, contact @Austin Archer")
 
     elif message.content.startswith("!commands"):
-        await client.sendmessage(message.channel, "Current commands can be found here: ")
+        await client.send_message(message.channel, "Current commands can be found here: ")
     elif message.content.startswith("!SRPP"):
         await client.sendmessage(message.channel, "SRPP Discord: http://hackforums.net/showthread.php?tid=5153895 Please note, ShoeCord is not affiliated with HackForums in any way, shape, or form. HackForums is a white hat research forum.")
 
