@@ -30,9 +30,6 @@ async def on_message(message):
     elif message.content.startswith('!pythonhelp'):
        await client.send_message(message.channel, 'Need help with Python? Shoe recommends the Python Docs, Stack Exchange, and Google. (; ')
 
-    elif message.content.startswith("!sources"):
-        await client.send_message(message.channel, 'Quit your whining about my sources and talk about the content.')
-
     elif message.content.startswith("!help"):
         await client.send_message(message.channel, "If you need help with something, tag (using the '@' symbol) Austin Archer or Jest.")
 
@@ -41,8 +38,7 @@ async def on_message(message):
 
     elif message.content.startswith("!commands"):
         await client.send_message(message.channel, "Current commands can be found here: ")
-    elif message.content.startswith("!SRPP"):
-        await client.sendmessage(message.channel, "SRPP Discord: http://hackforums.net/showthread.php?tid=5153895 Please note, ShoeCord is not affiliated with HackForums in any way, shape, or form. HackForums is a white hat research forum.")
+
     elif message.content.startswith("!GitHub"):
         await client.send_message(message.channel, "The GitHub repo for this project is here: https://github.com/Protonshoe/Aglets")
     elif message.content.startswith("!info"):
